@@ -46,7 +46,7 @@
             <span>全部地址</span>
         </div>
         <div class="cityList">
-            <span class="city-letter" id="present1">当前城市</span>
+            <span class="city-letter">当前城市</span>
             <p data-id="210300" class="currenCity">徐州市</p>
         </div>
     </div>
@@ -504,7 +504,7 @@
         //点击索引查询城市
         $("body").on('click', '.letter a', function () {
             var s = $(this).data("html");
-            $('.city').offset({top: -$('#' + s + '1').position().top + 230});
+            $('.city').offset({top: -$('#' + s + '1').position().top + 210});
             $("#showLetter span").html($(this).html());
             $("#showLetter").show().delay(500).hide(0);
         });
